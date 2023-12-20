@@ -17,7 +17,7 @@ export function UpdateInvoice({ id }: { id: string }) {
   return (
     <Link
       href="/dashboard/invoices"
-      className="rounded-md border p-2 hover:bg-gray-100"
+      className="rounded-md p-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-slate-50"
     >
       <PencilIcon className="w-5" />
     </Link>
@@ -27,7 +27,7 @@ export function UpdateInvoice({ id }: { id: string }) {
 export function DeleteInvoice({ id }: { id: string }) {
   return (
     <>
-      <button className="rounded-md border p-2 hover:bg-gray-100">
+      <button className="rounded-md p-2 border border-red-500 text-red-500 hover:bg-red-500 hover:text-slate-50">
         <span className="sr-only">Delete</span>
         <TrashIcon className="w-5" />
       </button>
